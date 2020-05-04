@@ -1,23 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          React app practicing sass
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div className="variable1">
+          variable1
+        </div>
+        <div className="variable2">
+          variable2
+        </div>
+        <div className="variable3">
+          variable3
+        </div>
+        <hr />
+        <div className="nest1">
+          <div className="nest2">
+            nest
+          </div>
+        </div>
       </header>
     </div>
   );

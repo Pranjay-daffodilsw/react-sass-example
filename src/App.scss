@@ -1,0 +1,41 @@
+// comment
+/* comment */
+@import 'style-variables';
+
+.App {
+  text: {
+    align: center;
+    transform: lowercase;
+    overflow: hidden;
+  }
+}
+
+.App-header {
+  background-color: powderblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.variable1 {
+  color: $primary1;
+}
+.variable2 {
+  color: $primary2;
+}
+.variable3 {
+  color: $primary3;
+}
+
+.nest1 {
+  .nest2 {
+    color: $primary1;
+    font: {
+      family: Helvetica, sans-serif;
+      size: 18px;
+      weight: bold;
+    }
+  }
+}
